@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Estacionamento</title>
+</head>
+<body>
+	<h:form>
+		<h:panelGrid>
+			<h:outputLabel value="Atendentes"/>
+			<h:commandButton value="Adicionar"  action="#{atendenteControlador.incluir}"  />
+			<h:commandButton value="Listar" action="atendenteListagem" />
+			
+			<h:outputLabel value="Entradas"/>
+			<h:commandButton value="Nova entrada" action="#{entradaControlador.incluir}"/>
+			<h:commandButton value="Listar entradas" action="entradaListagem" />
+			
+			<h:outputLabel value="Mensalistas"/>
+			<h:commandButton value="Novo Mensalista" action="#{mensalistaControlador.incluir}"/>
+			<h:commandButton value="Listar Mensalistas" action="mensalistaListagem" />
+			
+			<h:outputLabel value="Inadimplentes"/>
+			<h:commandButton value="Novo Inadimplente" action="#{inadimplenteControlador.incluir}"/>
+			<h:commandButton value="Listar Inadimplentes" action="inadimplenteListagem" />
+			
+			<h:outputLabel value="Ocorrencia"/>
+			<h:commandButton value="Nova Ocorrência" action="#{ocorrenciaControlador.incluir}"/>
+			<h:commandButton value="Listar Ocorrencias" action="ocorrenciaListagem" />
+			
+			<h:outputLabel value="Vagas"/>
+			<h:commandButton value="Nova Vaga" action="#{vagaControlador.incluir}"/>
+			<h:commandButton value="Listar Vagas" action="vagaListagem" />
+			
+		</h:panelGrid>
+	</h:form>
+</body>
+</html>

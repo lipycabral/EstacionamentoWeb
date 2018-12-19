@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Estacionamento</title>
+</head>
+<body>
+		
+	<h1>Exclusão de Mensalista</h1>
+		
+	<h:form>	
+	<h:panelGrid columns="2">
+		<h:outputLabel value="CPF: " for="cpf"/>
+		<h:inputText id="cpf" 
+			value="#{mensalistaControlador.mensalista.cpf}" />
+		
+		<h:outputLabel value="Nome: " for="nome" />
+		<h:inputText id="nome" 
+			value="#{mensalistaControlador.mensalista.nome}" />
+			
+		<h:outputLabel value="Rua: " for="rua" />
+		<h:inputText id="rua" 
+			value="#{mensalistaControlador.mensalista.rua}" />
+		
+		<h:outputLabel value="Número: " for="num" />
+		<h:inputText id="num" 
+			value="#{mensalistaControlador.mensalista.num}" />
+		
+		<h:outputLabel value="Bairro: " for="bairro" />
+		<h:inputText id="bairro" 
+			value="#{mensalistaControlador.mensalista.bairro}" />
+		
+		<h:outputLabel value="Cidade: " for="cidade" />
+		<h:inputText id="cidade" 
+			value="#{mensalistaControlador.mensalista.cidade}" />
+		
+		<h:outputLabel value="Estado: " for="uf" />
+		<h:inputText id="uf" 
+			value="#{mensalistaControlador.mensalista.uf}" />
+			
+		
+	</h:panelGrid>
+	<h:commandButton value="Confirmar" action="#{mensalistaControlador.remover}" />
+	<h:commandButton value="Cancelar" action="telaPrincipal" />
+	</h:form>
+</body>
+</html>
